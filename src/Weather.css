@@ -38,10 +38,8 @@
   flex-wrap: wrap;
 }
 
-.Weather img {
-  height: 64px;
-  width: 64px;
-  margin-right: 10px;
+.Weather canvas {
+  margin: 5px 5px 0 0;
 }
 
 .Weather .temp {
