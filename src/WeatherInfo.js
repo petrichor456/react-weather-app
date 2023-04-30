@@ -3,7 +3,6 @@ import FormattedDate from "./FormattedDate";
 import FormattedSunrise from "./FormattedSunrise";
 import FormattedSunset from "./FormattedSunset";
 import WeatherIcon from "./WeatherIcon";
-import WeatherTemp from "./WeatherTemp";
 
 export default function WeatherInfo(props) {
   return (
@@ -22,7 +21,10 @@ export default function WeatherInfo(props) {
           <div className="col-7 overview-details">
             <div className="row">
               <WeatherIcon code={props.data.icon} size={64} />
-              <WeatherTemp celsius={props.data.temp} />
+              <div className="WeatherTemp col-6">
+                <span className="temp">{props.data.temp}</span>
+                <span className="unit">°C</span>
+              </div>
             </div>
           </div>
         </div>
