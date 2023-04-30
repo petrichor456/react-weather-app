@@ -1,0 +1,26 @@
+.WeatherForecast {
+  text-align: center;
+  color: #524bc7;
+  background: #524bc733;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 20px;
+}
+
+.WeatherForecast-day {
+  color: #625becc7;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.WeatherForecast-temperature-min {
+  color: #625becc7;
+  font-weight: 500;
+}
+
+.WeatherForecast-temperatures {
+  font-size: 15px;
+  color: #524bc7;
+}

@@ -92,35 +92,3 @@ body {
 .box-icon {
   font-size: 40px;
 }
-
-#sunrise,
-#sunset {
-  font-size: 13px;
-}
-
-.weather-forecast {
-  text-align: center;
-  color: #524bc7;
-  background: #524bc733;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(3px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  padding: 20px;
-}
-
-.weather-forecast-date {
-  color: #625becc7;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.weather-forecast-temperature-min {
-  color: #625becc7;
-  font-weight: 500;
-}
-
-.weather-forecast-temperatures {
-  font-size: 15px;
-  color: #524bc7;
-}
