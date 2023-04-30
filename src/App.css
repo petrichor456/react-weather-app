@@ -1,9 +1,126 @@
 .App {
-  max-width: 600px;
   margin: 30px auto;
 }
 
 .App footer {
   font-size: 11px;
   margin: 10px 0;
+  max-width: 600px;
+  color: #524bc7;
+  margin-top: 20px;
+}
+
+footer a {
+  color: #524bc7;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #524bc7;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  background: rgb(82, 75, 199);
+  background: linear-gradient(
+    180deg,
+    rgba(82, 75, 199, 1) 10%,
+    rgba(108, 179, 240, 1) 50%,
+    rgba(82, 75, 199, 1) 90%
+  );
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.weather-app-wrapper {
+  max-width: 700px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+}
+
+.weather-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  background: rgba(159, 196, 236, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 20px;
+}
+
+.overview {
+  background: #524bc733;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 20px;
+}
+
+.weather-boxes {
+  padding: 20px 5px;
+}
+
+.weather-box {
+  background: #524bc733;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 20px;
+  color: #524bc7;
+  padding: 20px;
+  margin: 10px;
+  height: 150px;
+}
+
+.weather-box h5 {
+  margin: 0;
+}
+
+.box-icon {
+  font-size: 40px;
+}
+
+#sunrise,
+#sunset {
+  font-size: 13px;
+}
+
+.weather-forecast {
+  text-align: center;
+  color: #524bc7;
+  background: #524bc733;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 20px;
+}
+
+.weather-forecast-date {
+  color: #625becc7;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.weather-forecast-temperature-min {
+  color: #625becc7;
+  font-weight: 500;
+}
+
+.weather-forecast-temperatures {
+  font-size: 15px;
+  color: #524bc7;
 }

@@ -18,7 +18,7 @@ export default function WeatherTemp(props) {
 
   if (unit === `celsius`) {
     return (
-      <div className="WeatherTemp">
+      <div className="WeatherTemp col-6">
         <span className="temp">{props.celsius}</span>
         <span className="unit">
           °C |{" "}
@@ -30,7 +30,7 @@ export default function WeatherTemp(props) {
     );
   } else {
     return (
-      <div className="WeatherTemp">
+      <div className="WeatherTemp col-6">
         <span className="temp">{fTemp()}</span>
         <span className="unit">
           <a href="/" onClick={showCTemp}>

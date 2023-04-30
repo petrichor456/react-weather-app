@@ -7,17 +7,18 @@ export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
   const [weatherData, setWeatherData] = useState({ ready: false });
   function handleResponse(response) {
-    console.log(response.data);
     setWeatherData({
       ready: true,
       temp: Math.round(response.data.main.temp),
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
+      visibility: response.data.visibility / 1000,
       city: response.data.name,
       description: response.data.weather[0].description,
-      //iconUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       icon: response.data.weather[0].icon,
       date: new Date(response.data.dt * 1000),
+      sunrise: (response.data.sys.sunrise + response.data.timezone) * 1000,
+      sunset: (response.data.sys.sunset + response.data.timezone) * 1000,
     });
   }
 
@@ -39,7 +40,7 @@ export default function Weather(props) {
   if (weatherData.ready) {
     return (
       <div className="Weather">
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="search-form mb-4">
           <div className="row">
             <div className="col-9">
               <input
@@ -54,7 +55,7 @@ export default function Weather(props) {
               <input
                 type="submit"
                 value="search"
-                className="btn btn-primary w-100"
+                className="btn btn-search w-100"
               />
             </div>
           </div>
